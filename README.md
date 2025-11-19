@@ -84,19 +84,33 @@ Carry distances
 
 Total possession involvement
 
-5. Visualizations
+## 5. Visualizations
 
 Below are the main visuals included in this analysis.
 
-Progression Split
+### Progression Split  
+![Progression Split](visuals/progression_split_elite.png)
 
-Creativity vs Defensive Impact
+### Creativity vs Defensive Impact  
+![Impact Map](visuals/impact_map_elite.png)
 
-Match Dashboard
+### Match Dashboard  
+![Match Dashboard](visuals/match_dashboard_elite.png)
 
-Radar Profiles
+### Radar Profiles  
 
-Bruno Fernandes
+Bruno Fernandes  
+![Bruno Radar](visuals/radar_bruno.png)
+
+Casemiro  
+![Casemiro Radar](visuals/radar_casemiro.png)
+
+Overlay Comparison  
+![Overlay Radar](visuals/radar_bruno_casemiro_overlay.png)
+
+### Role Comparison Profile  
+![Role Profile](visuals/role_profile_bruno_casemiro.png)
+
 
 
 Casemiro
