@@ -225,3 +225,15 @@ Visualization and radar profiling
 Tactical interpretation grounded in real match contexts
 
 It forms the foundation of a future portfolio aimed at roles in football data science, recruitment analysis, or performance analysis.
+
+---
+
+## About the Author
+
+This project was developed by **Arnav Jain**, a data science graduate student with a focus on football analytics, performance analysis, and applied statistics.
+
+If you’d like to connect:
+- GitHub: https://github.com/arnavjain321-prog
+- LinkedIn: https://www.linkedin.com/in/www.linkedin.com/in/arnavjain2026
+
+Open to football analytics roles, internships, and collaborations.
