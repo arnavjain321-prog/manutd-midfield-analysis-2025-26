@@ -2,83 +2,59 @@ Manchester United Midfield Dynamics
 Bruno Fernandes & Casemiro Analysis (2025–26 Season Data)
 Executive Summary
 
-This project analyzes the on-pitch relationship between Bruno Fernandes and Casemiro during matches where both started for Manchester United in the 2025–26 Premier League season. Using match-level tables from FBref, we examine their per-90 profiles across creativity, progression, defensive impact, and involvement in possession.
+This project analyzes matches where Bruno Fernandes and Casemiro both started in midfield during Manchester United’s 2025–26 campaign. Using match-level and player-level data from FBref, we evaluate each player’s contribution across progression, creativity, defensive stability, and involvement in possession.
 
-The objective is to understand how their roles complement or diverge within Manchester United’s tactical structure, while demonstrating a modern, reproducible football-analytics workflow.
+The goal is to understand how their profiles complement one another within United’s tactical system, while demonstrating a modern football-analytics workflow suitable for professional clubs.
 
 1. Why This Analysis Matters
 
-Midfield structure strongly influences a team’s ability to control matches. Ball progression, defensive coverage, and possession value often hinge on how midfielders complement each other.
+Midfield structure underpins a team’s ability to control matches through:
 
-This analysis helps answer:
+progression into advanced zones
 
-How much progression does Bruno provide relative to Casemiro?
+defending transitions
 
-Does Casemiro’s defensive output provide stability for Bruno’s creative freedom?
+sustaining possession
 
-How consistent is their impact across different opponents?
+creating high-quality chances
 
-What does their combined statistical profile reveal about United’s midfield balance?
+This project focuses on how Fernandes and Casemiro function together as a midfield pairing and what it reveals about squad balance and tactical design.
 
 2. Data Sources
 
-All data originates from FBref match logs and player statistic tables.
-Only matches where both players started in midfield are included.
+Raw data scraped from FBref match logs and statistical tables
 
-Processed datasets:
+Only matches where both players started together were included
 
-midfield_matches_clean.csv
+All metrics standardized to per 90 minutes for comparability
 
-midfield_matches_features.csv
-
-player_summary_per90.csv
-
-Stored in the data/ directory.
+Processed datasets are stored in the data/ directory.
 
 3. Repository Structure
-
-A clear, folder-based layout (no branch graphics):
-
 Top-Level Folders
 
-data/ – Raw and cleaned CSV stat tables
+data/ – Raw and cleaned tables
 
-notebooks/ – All analysis notebooks, labeled in order
+notebooks/ – Jupyter notebooks in chronological workflow order
 
-visuals/ – Exported PNG images used in the README and reports
+visuals/ – Exported PNGs for dashboards and plots
 
-README.md – Project documentation
+README.md – Main documentation
 
-Notebooks Overview
+Notebook Workflow
 
-01_clean_data.ipynb – Merging and cleaning raw FBref tables
+01_clean_data.ipynb – Combining raw tables
 
-02_feature_engineering.ipynb – Per-90 calculations and feature creation
+02_feature_engineering.ipynb – Creating per-90 features
 
-03_visualizations.ipynb – Progression and impact plots
+03_visualizations.ipynb – Progression & impact metrics
 
-04_radar_plots.ipynb – Radar charts for Bruno and Casemiro
+04_radar_plots.ipynb – Radar profiles
 
-05_extra_visuals.ipynb – Supplemental visuals (bar charts, role profiles)
+05_extra_visuals.ipynb – Supplemental visuals
 
-Visual Exports
-
-progression_split_elite.png
-
-impact_map_elite.png
-
-radar_bruno.png
-
-radar_casemiro.png
-
-radar_bruno_casemiro_overlay.png
-
-match_dashboard_elite.png
-
-role_profile_bruno_casemiro.png
-
-4. Metrics Included
-Progression and Creativity
+4. Key Metrics Included
+Progression & Creativity
 
 Progressive passes per 90
 
@@ -86,75 +62,103 @@ Progressive carries per 90
 
 Key passes per 90
 
-Shot-creating actions per 90
+Shot creation actions
 
-Expected assists per 90 (when available)
+Expected assists
 
 Defensive Output
 
 Tackles + interceptions per 90
 
-Defensive actions
+Duel involvement
 
-Pressure-related stats (future extension)
+Recoveries
 
-Possession and Involvement
+Pressures (future addition)
 
-Touches in key zones
+Possession Profile
+
+Touches in build-up and advanced zones
 
 Carry distances
 
-Possession value (future extension)
-
-All metrics are standardized to per-90 for fair comparison.
+Total possession involvement
 
 5. Visualizations
-Progression Trends
 
-Line plots showing match-by-match progression output for both players.
+Below are the main visuals included in this analysis.
 
-Creativity vs Defensive Impact Map
+Progression Split
 
-Scatter visualization mapping progression (x-axis) vs defensive output (y-axis).
-Image: impact_map_elite.png
+Creativity vs Defensive Impact
+
+Match Dashboard
 
 Radar Profiles
 
-Individual and combined radars showing strengths across role-defining metrics.
-Files: radar_bruno.png, radar_casemiro.png, radar_bruno_casemiro_overlay.png
+Bruno Fernandes
 
-Role Comparison Profiles
 
-Scaled (0–1) bar charts comparing key progression and defensive categories.
-Image: role_profile_bruno_casemiro.png
+Casemiro
 
-6. Additional Visuals (from 05_extra_visuals.ipynb)
 
-Two supplemental visuals are included:
+Overlay Comparison
 
-Average Per-90 Comparison Chart
-Direct comparison of raw numerical output.
 
-Role Comparison Bar Chart (Scaled)
-Highlights relative strengths and differences between the two profiles.
+Role Comparison Profile
 
-These extend the analysis and provide a more club-style presentation layer.
+6. Key Insights
+Bruno Fernandes
 
-7. Future Work
+Leads the midfield in progressive passes, shot creation, and final-third involvement.
 
-Expand analysis to full 2025–26 and 2026–27 seasons
+Provides the majority of United’s creative progression when paired with Casemiro.
 
-Add full pressure metrics (PPDA, pressure regains, pressing zones)
+Operates significantly higher up the pitch, evidenced by final-third touches and carries.
 
-Implement possession value models (VAEP, xThreat)
+Casemiro
 
-Construct dynamic passing networks and team shape diagrams
+Dominates defensive actions per 90 (tackles + interceptions).
 
-Add match-state segmentation and opponent contextualization
+Offers more stability in early build-up and defensive transitions.
+
+Provides essential cover that enables Bruno’s advanced positioning.
+
+Combined Midfield Profile
+
+The pairing forms a classic creator + stabilizer relationship.
+
+United rely heavily on Bruno for ball progression into dangerous zones.
+
+Casemiro’s defensive output allows United to maintain structural balance, especially in transitions.
+
+Role comparison profile confirms clear complementarity rather than redundancy.
+
+7. Additional Visuals
+
+The 05_extra_visuals.ipynb notebook includes:
+
+Average Per-90 Comparison Bar Chart
+
+Scaled Role Comparison Profile (0–1)
+
+These supplemental visuals highlight category-specific strengths in a format commonly used in club scouting reports.
+
+8. Future Work
+
+Extend analysis to full 2025–26 and 2026–27 seasons
+
+Add pressure metrics (PPDA, pressure regains, pressing zones)
+
+Implement possession value models (xThreat, VAEP)
+
+Construct dynamic passing networks
+
+Add match-state segmentation and contextual opponent adjustments
 
 Build recruitment-style comparison radars vs league midfielders
 
-8. License
+9. License
 
 This project is released under the MIT License.
 
@@ -164,4 +168,4 @@ Arnav Jain
 Master of Science in Data Science, University of Virginia
 LinkedIn: https://www.linkedin.com/in/arnavjain2026/
 
-For collaboration, football-analytics roles, or feedback, feel free to connect.
+For collaboration or football-analytics opportunities, feel free to reach out.
