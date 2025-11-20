@@ -172,7 +172,16 @@ Add match-state segmentation and contextual opponent adjustments
 
 Build recruitment-style comparison radars vs league midfielders
 
-9. License
+9. Data Source
+
+- **FBref / StatsBomb**  
+  All match-level and player-level statistics (minutes played, goals, assists, shots, xG, key passes, progressive passes, defensive actions, etc.) were collected from FBref’s public StatsBomb dataset.  
+  https://fbref.com/en/
+
+*Data used only for educational, non-commercial analysis.*
+
+
+10. License
 
 This project is released under the MIT License.
 
